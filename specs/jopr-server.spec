@@ -21,7 +21,8 @@ jopr
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/
-cp -pr %{pbuild} %{buildroot}/usr/share/jopr-server
+cp -pr %{_sourcedir} %{buildroot}/usr/share/jopr-server
+#cp -pr %{pbuild} %{buildroot}/usr/share/jopr-server
 
 %clean
 rm -rf %{buildroot}
